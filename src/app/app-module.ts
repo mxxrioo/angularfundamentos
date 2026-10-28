@@ -1,13 +1,22 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { PrimerComponent } from './components/primercomponent/primercomponent';
+import { SegundoComponent } from './components/segundocomponent/segundocomponent';
+import { EventosComponent } from './components/eventoscomponent/eventoscomponent';
+import { DirectivasComponent } from './components/directivascomponent/directivascomponent';
+import { NumerosEstilosComponent } from './components/numerosestiloscomponent/numerosestiloscomponent';
 
 @NgModule({
   declarations: [
-    App
+    App, PrimerComponent, SegundoComponent
+    , EventosComponent, DirectivasComponent
+    , NumerosEstilosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
